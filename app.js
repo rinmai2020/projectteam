@@ -14,3 +14,16 @@ themeSwith.onclick = function () {
   paragraph.classList.toggle("active");
   body.classList.toggle("dark");
 };
+
+// carousel
+var swiper = new Swiper(".mySwiper", {
+  spaceBetween: 30,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
