@@ -106,33 +106,81 @@ class myFooter extends HTMLElement {
   }
 }
 customElements.define("my-footer", myFooter);
-class myHeader extends HTMLElement {
-  connectedCallback() {
-    this.innerHTML = `
-    <header class="header">
-          <div class="header__left-logo">
-            <h1><a href="index.html" class="logo">Diner</a></h1>
-          </div>
-          <div class="header__right-content">
-            <div class="search-bar">
-              <form class="search-header">
-                <input
-                  type="search"
-                  name="search"
-                  class="search__input"
-                  placeholder="Search here.."
-                />
-                <span class="fa fa-search search__icon"></span>
-              </form>
-            </div>
-            <div class="themeSwith mode-container"></div>
-            <div class="mobile__button text-center">
-              <button type="button" class="button-bars">
-                <i class="fa fa-bars"></i>
-              </button>
-            </div>
-          </div>
-        </header>`;
-  }
-}
-customElements.define("my-header", myHeader);
+// class myHeader extends HTMLElement {
+//   connectedCallback() {
+//     this.innerHTML = `
+//   <header class="header">
+//     <div class="header__left-logo">
+//       <h1><a href="index.html" class="logo">Diner</a></h1>
+//     </div>
+//     <div class="header__right-content">
+//       <div class="search-bar">
+//         <form class="search-header">
+//           <input
+//             type="search"
+//             name="search"
+//             class="search__input"
+//             placeholder="Search here.."
+//           />
+//           <span class="fa fa-search search__icon"></span>
+//         </form>
+//       </div>
+//       <div class="w3_menu text-center">
+//         <!-- toggle switch for light and dark theme -->
+//         <div class="mobile-position">
+//           <nav class="navigation">
+//             <div class="theme-switch-wrapper">
+//               <label class="theme-switch" for="checkbox">
+//                 <input type="checkbox" id="checkbox" />
+//                 <div class="mode-container">
+//                   <i class="gg-sun"></i>
+//                   <i class="gg-moon"></i>
+//                 </div>
+//               </label>
+//             </div>
+//           </nav>
+//         </div>
+//       </div>
+//       <div class="mobile-nav-button text-center">
+//         <button id="trigger-overlay" type="button">
+//           <i class="fa fa-bars" aria-hidden="true"></i>
+//         </button>
+//       </div>
+//     </div>
+//     <div class="overlay overlay-scale">
+//       <button type="button" class="overlay-close">
+//         <i class="fa fa-times" aria-hidden="true"></i>
+//       </button>
+//       <nav>
+//         <ul>
+//           <li><a href="index.html"> Home </a></li>
+//           <li><a href="about.html"> About </a></li>
+//           <li><a href="services.html"> Services </a></li>
+//           <li><a href="error.html"> 404 </a></li>
+//           <li><a href="landing-single.html"> Landing Page </a></li>
+//           <li><a href="contact.html"> Contact </a></li>
+//         </ul>
+//       </nav>
+//     </div>
+//   </header>`;
+//   }
+// }
+// customElements.define("my-header", myHeader);
+
+// const toggle = document.querySelector(".mobile-nav-button");
+// const toggle2 = document.querySelector(".overlay-scale");
+// const close = document.querySelector(".overlay-close");
+// function addIcon() {
+//   toggle.classList.toggle("open");
+//   toggle2.classList.toggle("open");
+// }
+// document.querySelector(".mobile-nav-button").addEventListener("click", addIcon);
+// function removeIcon() {
+//   toggle.classList.remove("open");
+//   toggle2.classList.remove("open");
+// }
+// document.querySelector(".overlay-close").addEventListener("click", removeIcon);
+// document.querySelector(".mode-container").onclick = function () {
+//   document.querySelector("body").classList.toggle("dark");
+//   document.querySelector(".search-bar").classList.toggle("dark");
+// };

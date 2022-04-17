@@ -26,8 +26,8 @@
   <body>
     <section class="r-innerpage" id="home">
       <div class="container">
-        <my
-        <!-- breadcrumb  -->
+        <my-header></my-header>
+        <!-- breadcrumb -->
         <div aria-label="breadcrumb" class="text-center">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="index.html">Home</a></li>

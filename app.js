@@ -1,37 +1,18 @@
-let themeSwith = document.querySelector(".themeSwith ");
-let searchInput = document.querySelector(".search__input ");
-let searchIcon = document.querySelector(".search__icon ");
-let paragraph = document.querySelector(".content-1-right");
-let subscribe1 = document.querySelector(".subscribe1");
-let subscribe2 = document.querySelector(".subscribe2");
-let body = document.querySelector("body");
-themeSwith.onclick = function () {
-  themeSwith.classList.toggle("active");
-  searchInput.classList.toggle("active");
-  searchIcon.classList.toggle("active");
-  subscribe1.classList.toggle("active");
-  subscribe2.classList.toggle("active");
-  paragraph.classList.toggle("active");
-  body.classList.toggle("dark");
-};
-
-// carousel
-var swiper = new Swiper(".mySwiper", {
-  spaceBetween: 30,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
-
 // show menu
-const toggle = document.querySelector(".container");
+const toggle = document.querySelector(".mobile-nav-button");
 const toggle2 = document.querySelector(".overlay-scale");
-toggle.onclick = function () {
-  toggle.classList.toggle("overlay-open");
-  toggle2.classList.toggle("overlay-open");
+const close = document.querySelector(".overlay-close");
+function addIcon() {
+  toggle.classList.toggle("open");
+  toggle2.classList.toggle("open");
+}
+document.querySelector(".mobile-nav-button").addEventListener("click", addIcon);
+function removeIcon() {
+  toggle.classList.remove("open");
+  toggle2.classList.remove("open");
+}
+document.querySelector(".overlay-close").addEventListener("click", removeIcon);
+document.querySelector(".mode-container").onclick = function () {
+  document.querySelector("body").classList.toggle("dark");
+  document.querySelector(".search-bar").classList.toggle("dark");
 };
