@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Restaurants Bootstrap</title>
+    <title>Landing page</title>
     <!-- swiper carousel  -->
     <link
       rel="stylesheet"
@@ -22,9 +22,10 @@
     />
     <!-- link css  -->
     <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/about.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body class="dark">
+  <body>
     <!-- banner header start -->
     <section class="header-banner" id="home">
       <div class="container">
@@ -59,11 +60,13 @@
             <nav>
               <ul>
                 <li><a href="index.html"> Home </a></li>
-                <li><a href="about.html"> About </a></li>
-                <li><a href="services.html"> Services </a></li>
-                <li><a href="error.html"> 404 </a></li>
-                <li><a href="landing-single.html"> Landing Page </a></li>
-                <li><a href="contact.html"> Contact </a></li>
+                <li><a href="#about"> About </a></li>
+                <li><a href="#services"> Services </a></li>
+                <li><a href="#team"> Team </a></li>
+                <li><a href="#tats"> Tats </a></li>
+                <li><a href="#blogs"> Blogs Posts </a></li>
+                <li><a href="#customer"> Customers </a></li>
+                <li><a href="#contact"> Contact </a></li>
               </ul>
             </nav>
           </div>
@@ -85,7 +88,7 @@
     </section>
     <!-- banner header end -->
     <!-- about us start -->
-    <section class="about py-5">
+    <section class="about py-5" id="about">
       <div class="container-fix container">
         <div class="row">
           <div class="col-lg-5 content-1-left">
@@ -160,6 +163,95 @@
       </div>
     </section>
     <!-- block end -->
+    <section class="r-team-main" id="team">
+      <div class="team py-5">
+        <div class="container py-lg-5">
+          <div class="header-title text-center">
+            <h6 class="title-h6">Our team</h6>
+            <h3 class="title-h3 mb-4">Meet Our Chefs</h3>
+          </div>
+          <div class="row team-row mt-md-5 mt-4">
+            <div class="col-lg-4 col-6 team-wrap">
+              <div class="team-member text-center">
+                <div class="team-img">
+                  <img src="./images/chef2.jpg" alt="" class="radius-image" />
+                  <div class="overlay-team">
+                    <div class="team-details text-center">
+                      <div class="socials mt-20">
+                        <a href="#url">
+                          <span class="fa fa-facebook-f"></span>
+                        </a>
+                        <a href="#url">
+                          <span class="fa fa-twitter"></span>
+                        </a>
+                        <a href="#url">
+                          <span class="fa fa-instagram"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a href="#url" class="team-title">Daniel jacobs</a>
+                <p>Chef</p>
+              </div>
+            </div>
+            <!-- end team member -->
+
+            <div class="col-lg-4 col-6 team-wrap">
+              <div class="team-member text-center">
+                <div class="team-img">
+                  <img src="./images/chef1.jpg" alt="" class="radius-image" />
+                  <div class="overlay-team">
+                    <div class="team-details text-center">
+                      <div class="socials mt-20">
+                        <a href="#url">
+                          <span class="fa fa-facebook-f"></span>
+                        </a>
+                        <a href="#url">
+                          <span class="fa fa-twitter"></span>
+                        </a>
+                        <a href="#url">
+                          <span class="fa fa-instagram"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a href="#url" class="team-title">Claire Daniel</a>
+                <p>Chef</p>
+              </div>
+            </div>
+            <!-- end team member -->
+
+            <div class="col-lg-4 col-6 team-wrap mt-lg-0 mt-5">
+              <div class="team-member last text-center">
+                <div class="team-img">
+                  <img src="./images/chef2.jpg" alt="" class="radius-image" />
+                  <div class="overlay-team">
+                    <div class="team-details text-center">
+                      <div class="socials mt-20">
+                        <a href="#url">
+                          <span class="fa fa-facebook-f"></span>
+                        </a>
+                        <a href="#url">
+                          <span class="fa fa-twitter"></span>
+                        </a>
+                        <a href="#url">
+                          <span class="fa fa-instagram"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a href="#url" class="team-title">Daniel Hunt</a>
+                <p>Chef</p>
+              </div>
+            </div>
+            <!-- end team member -->
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- categories start -->
     <section class="categories py-5">
       <div class="container py-md-5 py-2">
@@ -275,7 +367,7 @@
     </section>
     <!-- categories end -->
     <!-- fearture start -->
-    <section id="features" class="home-services py-5">
+    <section id="services" class="home-services py-5">
       <div class="container py-lg-5 py-md-3 py-3">
         <div class="row">
           <div class="col-lg-4 col-md-6 col-sm-12">
@@ -426,7 +518,7 @@
     </section>
     <!-- dilicious end  -->
     <!-- stats start  -->
-    <section class="stats py-lg-0 py-md-5 py-4">
+    <section class="stats py-lg-0 py-md-5 py-4" id="tats">
       <div class="container">
         <div class="stats">
           <div class="row">
@@ -644,7 +736,7 @@
     <!-- testimonials start  -->
     <section
       class="testimonials text-center testimonials-client position-relative"
-      id="testimonial"
+      id="customer"
     >
       <div class="testimonials-sub">
         <div class="container py-lg-5 py-md-3">

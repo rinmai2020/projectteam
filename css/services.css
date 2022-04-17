@@ -1,0 +1,24 @@
+.border-dot {
+  padding-bottom: 10px;
+  border-bottom: 2px dotted #bbb;
+}
+.no-gutters > [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+.no-gutters {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+.menu-item-name h6 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.menu-item-price h6 {
+  font-weight: 600;
+  font-size: 1.3em;
+  color: var(--primary-color);
+}
+.menu-item-description p {
+  margin-top: 10px;
+}

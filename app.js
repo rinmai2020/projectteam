@@ -27,3 +27,11 @@ var swiper = new Swiper(".mySwiper", {
     clickable: true,
   },
 });
+
+// show menu
+const toggle = document.querySelector(".container");
+const toggle2 = document.querySelector(".overlay-scale");
+toggle.onclick = function () {
+  toggle.classList.toggle("overlay-open");
+  toggle2.classList.toggle("overlay-open");
+};
