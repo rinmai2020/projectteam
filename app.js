@@ -1,3 +1,16 @@
+// carousel
+var swiper = new Swiper(".mySwiper", {
+  spaceBetween: 30,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
 // show menu
 const toggle = document.querySelector(".mobile-nav-button");
 const toggle2 = document.querySelector(".overlay-scale");
@@ -15,4 +28,5 @@ document.querySelector(".overlay-close").addEventListener("click", removeIcon);
 document.querySelector(".mode-container").onclick = function () {
   document.querySelector("body").classList.toggle("dark");
   document.querySelector(".search-bar").classList.toggle("dark");
+  // document.querySelector(".swiper-pagination").classList.toggle("dark");
 };

@@ -30,6 +30,7 @@ body.dark {
   background: var(--bg-color);
 }
 .dark {
+  --pagination-bullet: #d8d8d8;
   --primary-color: #ff6600;
   --secondary-color: #ffc600;
   --font-color: #c2d0da;
@@ -46,6 +47,7 @@ body.dark {
   --footer-bg: #000;
 }
 :root {
+  --pagination-bullet: #d8d8d8;
   --primary-color: #ff6600;
   --secondary-color: #ffc600;
   --font-color: rgba(22, 28, 45, 0.7);
@@ -1060,6 +1062,21 @@ q::after {
   width: 100%;
   height: 100%;
 }
+
+.swiper-pagination-bullet span {
+  background: var(--pagination-bullet);
+}
+.swiper-pagination-bullet.active span {
+  background: var(--swiper-theme-color);
+}
+.swiper-pagination-bullet {
+}
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 0;
+}
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets
   .swiper-pagination-bullet {
@@ -1226,6 +1243,34 @@ q::after {
   margin-left: auto;
 }
 
+@media (max-width: 375px) {
+  .title-h6 {
+    font-size: 16px !important;
+    letter-spacing: 0.5px;
+  }
+}
+@media (max-width: 480px) {
+  .header-banner .banner__info h3 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .header-banner .banner__info {
+    max-width: 500px;
+    margin-top: 30px;
+  }
+  .header-banner {
+    min-height: 450px;
+  }
+}
+@media (max-width: 600px) {
+  .header__right-content .search-bar {
+    display: none;
+  }
+  p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
@@ -1246,4 +1291,107 @@ q::after {
   .container {
     max-width: 1200px;
   }
+}
+/* right bar  */
+/* Demo Bar Right */
+
+#w3lDemoBar.w3l-demo-bar {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  padding: 40px 5px;
+  padding-top: 70px;
+  margin-bottom: 70px;
+  background: #0d1326;
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 9px;
+}
+
+#w3lDemoBar.w3l-demo-bar a {
+  display: block;
+  color: #e6ebff;
+  text-decoration: none;
+  line-height: 24px;
+  opacity: 0.6;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#w3lDemoBar.w3l-demo-bar span.w3l-icon {
+  display: block;
+}
+
+#w3lDemoBar.w3l-demo-bar a:hover {
+  opacity: 1;
+}
+
+#w3lDemoBar.w3l-demo-bar .w3l-icon svg {
+  color: #e6ebff;
+}
+#w3lDemoBar.w3l-demo-bar .responsive-icons {
+  margin-top: 30px;
+  border-top: 1px solid #41414d;
+  padding-top: 40px;
+}
+#w3lDemoBar.w3l-demo-bar .demo-btns {
+  border-top: 1px solid #41414d;
+  padding-top: 30px;
+}
+#w3lDemoBar.w3l-demo-bar .responsive-icons a span.fa {
+  font-size: 26px;
+}
+#w3lDemoBar.w3l-demo-bar .no-margin-bottom {
+  margin-bottom: 0;
+}
+.toggle-right-sidebar span {
+  background: #0d1326;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #e6ebff;
+  border-radius: 50px;
+  font-size: 18px;
+  cursor: pointer;
+  opacity: 0.5;
+}
+.pull-right {
+  float: right;
+  position: fixed;
+  right: 0px;
+  top: 85px;
+  width: 90px;
+  z-index: 99999;
+  text-align: center;
+}
+/* ============================================================
+RIGHT SIDEBAR SECTION
+============================================================ */
+
+#right-sidebar {
+  width: 90px;
+  position: fixed;
+  height: 100%;
+  z-index: 1000;
+  right: 0px;
+  top: 0;
+  margin-top: 75px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  overflow-y: auto;
+}
+
+/* ============================================================
+RIGHT SIDEBAR TOGGLE SECTION
+============================================================ */
+
+.hide-right-bar-notifications {
+  margin-right: -300px !important;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
