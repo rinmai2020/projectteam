@@ -2,7 +2,7 @@
 class myFooter extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
-    <section class="footer">
+    <section class="footer" id="contact" >
     <div class="footer-sub py-5">
       <div class="container py-lg-4">
         <div class="row footer-top-29">
@@ -102,7 +102,34 @@ class myFooter extends HTMLElement {
         </div>
       </div>
     </div>
-  </section>`;
+  </section>
+  <section class="bottom-copyright">
+      <div class="container">
+        <div class="row">
+          <p class="col-lg-8 copy-footer-29">
+            © 2021 Diner. All rights reserved. Design by
+            <a href="https://w3layouts.com/" target="_blank"> W3Layouts</a>
+          </p>
+
+          <div class="col-lg-4 footer-list-29">
+            <ul class="d-flex text-lg-right">
+              <li><a href="#careers"> Careers</a></li>
+              <li class="mx-lg-5 mx-md-4 mx-3">
+                <a href="#privacymy">Privacy Policy</a>
+              </li>
+              <li><a href="contact.html">Contact us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <button
+      onclick="topFunction()"
+      id="movetop"
+      title="Go to top"
+      style="display: block">
+    ⤴
+    </button>
+    </section>`;
   }
 }
 customElements.define("my-footer", myFooter);
@@ -131,3 +158,45 @@ class rightBar extends HTMLElement {
   }
 }
 customElements.define("right-bar", rightBar);
+class rightSideBar extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
+    <div class="pull-right toggle-right-sidebar">
+      <span
+        class="fa title-open-right-sidebar tooltipstered fa-angle-double-right"
+      ></span>
+    </div>
+    <div id="right-sidebar" class="right-sidebar-notifcations nav-collapse">
+      <div>
+        <div id="DemoBar" class="r-demo-bar">
+          <div class="demo-btns">
+            <a href="#url">
+              <span class="r-icon">
+                <span class="fa fa-arrow-left"></span>
+              </span>
+              <span>Back</span>
+            </a>
+            <a href="#url">
+              <span class="r-icon">
+                <span class="fa fa-download"></span>
+              </span>
+              <span>Download</span>
+            </a>
+            <a href="#url" class="mb-0">
+              <span class="r-icon">
+                <span class="fa fa-shopping-cart"></span>
+              </span>
+              <span>Buy</span>
+            </a>
+          </div>
+        </div>
+        <div
+          class="right-sidebar-panel-content animated fadeInRight"
+          tabindex="5003"
+          style="overflow: hidden; outline: none"
+        ></div>
+      </div>
+    </div>`;
+  }
+}
+customElements.define("right-side-bar", rightSideBar);

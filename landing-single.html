@@ -26,9 +26,9 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <right-side-bar></right-side-bar>
     <!-- banner header start -->
-    <!-- banner header start -->
-    <section class="header-banner" id="home">
+    <section class="r-banner" id="home">
       <div class="container">
         <!-- header start -->
         <header class="header">
@@ -36,8 +36,9 @@
             <h1><a href="index.html" class="logo">Diner</a></h1>
           </div>
           <div class="header__right-content">
+            <!-- search starts  -->
             <div class="search-bar">
-              <form class="search-header">
+              <form class="search position-relative">
                 <input
                   type="search"
                   name="search"
@@ -47,8 +48,9 @@
                 <span class="fa fa-search search__icon"></span>
               </form>
             </div>
-            <div class="w3_menu text-center">
-              <!-- toggle  light and dark theme -->
+            <!-- search end  -->
+            <!-- toggle light and dark starts -->
+            <div class="r_menu text-center">
               <div class="mobile-position">
                 <nav class="navigation">
                   <div class="theme-switch-wrapper">
@@ -62,8 +64,8 @@
                   </div>
                 </nav>
               </div>
-              <!-- //toggle light and dark theme -->
             </div>
+            <!-- toggle light and dark end-->
             <div class="mobile-nav-button text-center">
               <button id="trigger-overlay" type="button">
                 <i class="fa fa-bars" aria-hidden="true"></i>
@@ -91,7 +93,7 @@
           </div>
         </header>
         <!-- header end -->
-        <!-- banner start -->
+        <!-- banner info start -->
         <div class="banner__info">
           <h3 class="mb-4">The only thing we love more than food is you!</h3>
           <p class="pr-lg-5 mt-md-4 mt-3">
@@ -102,7 +104,7 @@
             Read More<span class="fa fa-chevron-right ml-2"></span>
           </button>
         </div>
-        <!-- banner end -->
+        <!-- banner info end -->
       </div>
     </section>
     <!-- banner header end -->
@@ -755,7 +757,7 @@
     <!-- testimonials start  -->
     <section
       class="testimonials text-center testimonials-client position-relative"
-      id="testimonial"
+      id="customer"
     >
       <div class="testimonials-sub py-5">
         <div class="container py-lg-5 py-md-3">
@@ -883,8 +885,8 @@
         </div>
       </div>
     </section>
-    <my-footer></my-footer>
     <!-- testimonials end  -->
+    <my-footer></my-footer>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script type="module" src="./footer-header.js"></script>
