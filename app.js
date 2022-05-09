@@ -1,4 +1,14 @@
 // carousel
+
+// pagination: new SwiperPagination(
+//   alignment: Alignment.bottomCenter,
+//   builder: new DotSwiperPaginationBuilder(
+//       color: Colors.grey, activeColor: Color(0xff38547C)),
+// ),
+// control: new SwiperControl(
+//   color: Color(0xff38547C),
+// ),
+
 var swiper = new Swiper(".mySwiper", {
   spaceBetween: 30,
   autoplay: {

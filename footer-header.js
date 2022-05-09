@@ -7,7 +7,7 @@ class myFooter extends HTMLElement {
       <div class="container py-lg-4">
         <div class="row footer-top-29">
           <div
-            class="col-lg-4 col-md-6 col-sm-7 footer-list-29 footer-1 pr-lg-5"
+            class="col-lg-4 col-md-6 col-sm-7 footer-list-29 footer-1 pe-lg-5"
           >
             <div class="footer-logo mb-3">
               <h2>
@@ -166,7 +166,7 @@ class rightSideBar extends HTMLElement {
         class="fa title-open-right-sidebar tooltipstered fa-angle-double-right"
       ></span>
     </div>
-    <div id="right-sidebar" class="right-sidebar-notifcations nav-collapse">
+    <div id="right-sidebar">
       <div>
         <div id="DemoBar" class="r-demo-bar">
           <div class="demo-btns">
@@ -190,11 +190,6 @@ class rightSideBar extends HTMLElement {
             </a>
           </div>
         </div>
-        <div
-          class="right-sidebar-panel-content animated fadeInRight"
-          tabindex="5003"
-          style="overflow: hidden; outline: none"
-        ></div>
       </div>
     </div>`;
   }
